@@ -16,7 +16,6 @@ export const useFetch = (url) => {
     // 8 - tratando erros
     const [error, setError] = useState(null)
 
-    // 9 - desafio 6
     const [itemId, setItemId] = useState(null)
 
     const httpConfig = (data, method) => {
@@ -92,7 +91,6 @@ export const useFetch = (url) => {
 
                 json = await res.json()
 
-                // 9 - desafio 6
             }else if (method === 'DELETE') {
                 const deleteUrl = `${url}/${itemId}`
 
